@@ -29,7 +29,94 @@
                 </action>
             </actions>
         </event-block>
-        <event-group description="" sid="5224971871390566" title="Timer">
+        <event-group collapsed="1" description="" sid="5812082913065703" title="Start">
+            <sub-events>
+                <event-block sid="6113103946915705">
+                    <conditions>
+                        <condition id="-25" name="On loader layout complete" sid="5013430610134492" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Connect" sid="5922768467237896" type="WebSocket">
+                            <param id="0" name="URL">&quot;ws://localhost:80&quot;</param>
+                            <param id="1" name="Protocol (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="6" name="Set CSS style" sid="9809158870229569" type="Teams">
+                            <param id="0" name="Property name">&quot;font-size&quot;</param>
+                            <param id="1" name="Value">&quot;32px&quot;</param>
+                        </action>
+                        <action id="6" name="Set CSS style" sid="804279693021374" type="Teams">
+                            <param id="0" name="Property name">&quot;background&quot;</param>
+                            <param id="1" name="Value">&quot;gray&quot;</param>
+                        </action>
+                        <action id="6" name="Set CSS style" sid="3522455420139529" type="Teams">
+                            <param id="0" name="Property name">&quot;border&quot;</param>
+                            <param id="1" name="Value">&quot;none&quot;</param>
+                        </action>
+                        <action id="6" name="Set CSS style" sid="3316601841964324" type="Teams">
+                            <param id="0" name="Property name">&quot;borderRadius&quot;</param>
+                            <param id="1" name="Value">&quot;10px 10px 0 0&quot;</param>
+                        </action>
+                        <action id="6" name="Set CSS style" sid="1106873738602421" type="Teams">
+                            <param id="0" name="Property name">&quot;outline&quot;</param>
+                            <param id="1" name="Value">&quot;0&quot;</param>
+                        </action>
+                        <action id="6" name="Set CSS style" sid="5492616456420369" type="Teams">
+                            <param id="0" name="Property name">&quot;font-family&quot;</param>
+                            <param id="1" name="Value">&quot;Georgia, Serif&quot;</param>
+                        </action>
+                        <action id="7" name="Set CSS style" sid="5254572815462509" type="Name">
+                            <param id="0" name="Property name">&quot;background&quot;</param>
+                            <param id="1" name="Value">&quot;gray&quot;</param>
+                        </action>
+                        <action id="7" name="Set CSS style" sid="806460978763561" type="Name">
+                            <param id="0" name="Property name">&quot;border&quot;</param>
+                            <param id="1" name="Value">&quot;0&quot;</param>
+                        </action>
+                        <action id="7" name="Set CSS style" sid="4686319989747135" type="Name">
+                            <param id="0" name="Property name">&quot;outline&quot;</param>
+                            <param id="1" name="Value">&quot;0&quot;</param>
+                        </action>
+                        <action id="7" name="Set CSS style" sid="8043543453324662" type="Name">
+                            <param id="0" name="Property name">&quot;font-size&quot;</param>
+                            <param id="1" name="Value">&quot;32px&quot;</param>
+                        </action>
+                        <action id="7" name="Set CSS style" sid="9947712732308982" type="Name">
+                            <param id="0" name="Property name">&quot;font-family&quot;</param>
+                            <param id="1" name="Value">&quot;Georgia, Serif&quot;</param>
+                        </action>
+                        <action id="7" name="Set CSS style" sid="5341066680474986" type="Name">
+                            <param id="0" name="Property name">&quot;cursor&quot;</param>
+                            <param id="1" name="Value">&quot;default&quot;</param>
+                        </action>
+                        <action id="5" name="Set CSS style" sid="1373602583569993" type="Submit">
+                            <param id="0" name="Property name">&quot;background&quot;</param>
+                            <param id="1" name="Value">&quot;gray&quot;</param>
+                        </action>
+                        <action id="5" name="Set CSS style" sid="9105911838916751" type="Submit">
+                            <param id="0" name="Property name">&quot;border&quot;</param>
+                            <param id="1" name="Value">&quot;0&quot;</param>
+                        </action>
+                        <action id="5" name="Set CSS style" sid="849072220874644" type="Submit">
+                            <param id="0" name="Property name">&quot;outline&quot;</param>
+                            <param id="1" name="Value">&quot;0&quot;</param>
+                        </action>
+                        <action id="5" name="Set CSS style" sid="2818504909301139" type="Submit">
+                            <param id="0" name="Property name">&quot;font-size&quot;</param>
+                            <param id="1" name="Value">&quot;32px&quot;</param>
+                        </action>
+                        <action id="5" name="Set CSS style" sid="593137776928427" type="Submit">
+                            <param id="0" name="Property name">&quot;font-family&quot;</param>
+                            <param id="1" name="Value">&quot;Georgia, Serif&quot;</param>
+                        </action>
+                        <action id="5" name="Set CSS style" sid="6388009332731137" type="Submit">
+                            <param id="0" name="Property name">&quot;borderRadius&quot;</param>
+                            <param id="1" name="Value">&quot;0 0 10px 10px&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" sid="5224971871390566" title="Timer">
             <sub-events>
                 <event-block sid="7664870837299271">
                     <conditions>
@@ -71,32 +158,25 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="6113103946915705">
-            <conditions>
-                <condition id="-25" name="On loader layout complete" sid="5013430610134492" type="System" />
-            </conditions>
-            <actions>
-                <action id="0" name="Connect" sid="5922768467237896" type="WebSocket">
-                    <param id="0" name="URL">&quot;ws://localhost:80&quot;</param>
-                    <param id="1" name="Protocol (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="8874954985840656">
             <conditions>
                 <condition behavior="Car" id="0" name="Is moving" sid="7966977161375558" type="Bolid" />
             </conditions>
             <actions>
-                <action id="2" name="Set at X" sid="6212332701575469" type="Outgoing">
+                <action id="2" name="Set at X" sid="7994446960334815" type="Outgoing">
                     <param id="0" name="X">0</param>
+                    <param id="1" name="Value">&quot;Moving&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="6212332701575469" type="Outgoing">
+                    <param id="0" name="X">1</param>
                     <param id="1" name="Value">Bolid.Angle</param>
                 </action>
                 <action id="2" name="Set at X" sid="3944834751606776" type="Outgoing">
-                    <param id="0" name="X">1</param>
+                    <param id="0" name="X">2</param>
                     <param id="1" name="Value">Bolid.X</param>
                 </action>
                 <action id="2" name="Set at X" sid="7851751404929035" type="Outgoing">
-                    <param id="0" name="X">2</param>
+                    <param id="0" name="X">3</param>
                     <param id="1" name="Value">Bolid.Y</param>
                 </action>
                 <action id="2" name="Send text" sid="2681538837746745" type="WebSocket">
@@ -105,25 +185,111 @@
                 <action id="0" name="Clear" sid="2726988069740121" type="Outgoing" />
             </actions>
         </event-block>
-        <event-block sid="4037122292456869">
+        <event-block sid="6869162759379468">
             <conditions>
-                <condition id="3" name="On message" sid="2225917278797659" type="WebSocket" />
+                <condition id="2" name="Key is down" sid="3925588997696154" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="11" name="Load" sid="3726421235275271" type="Incoming">
-                    <param id="0" name="JSON">WebSocket.MessageText</param>
+                <action id="10" name="Load image from URL" sid="8908490481336071" type="Bolid">
+                    <param id="0" name="URI">&quot;Ferrari_2014.png&quot;</param>
+                    <param id="1" name="Size">1</param>
                 </action>
-                <action id="-8" name="Set angle" sid="1348959862379243" type="Bolid2">
-                    <param id="0" name="Angle">Incoming.At(0)</param>
-                </action>
-                <action id="-1" name="Set X" sid="1409003944252915" type="Bolid2">
-                    <param id="0" name="X">Incoming.At(1)</param>
-                </action>
-                <action id="-2" name="Set Y" sid="5552385847922033" type="Bolid2">
-                    <param id="0" name="Y">Incoming.At(2)</param>
-                </action>
-                <action id="0" name="Clear" sid="6651804955509105" type="Incoming" />
             </actions>
         </event-block>
+        <event-block sid="7636181325972099">
+            <conditions>
+                <condition id="2" name="Key is down" sid="3290572121355591" type="Keyboard">
+                    <param id="0" name="Key">81 (Q)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Load image from URL" sid="3414339640388027" type="Bolid">
+                    <param id="0" name="URI">&quot;Lotus_2014.png&quot;</param>
+                    <param id="1" name="Size">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6585324825566627">
+            <conditions>
+                <condition id="0" name="On clicked" sid="6838033320096663" type="Submit" />
+            </conditions>
+            <actions>
+                <action behavior="Car" id="8" name="Set enabled" sid="1536721177666348" type="Bolid">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="10" name="Load image from URL" sid="6883519099369438" type="Bolid">
+                    <param id="0" name="URI">Teams.SelectedText&amp;&quot;_2014.png&quot;</param>
+                    <param id="1" name="Size">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="9991134363657183" type="Background" />
+                <action id="-9" name="Destroy" sid="8817317305961532" type="Name" />
+                <action id="-9" name="Destroy" sid="8701777289742659" type="Teams" />
+                <action id="-9" name="Destroy" sid="36710390567624" type="Submit" />
+                <action id="2" name="Set at X" sid="4213826665664349" type="Outgoing">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Value">&quot;ChangeTeam&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="7457317492808006" type="Outgoing">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Value">Teams.SelectedText</param>
+                </action>
+                <action id="2" name="Send text" sid="4261970510171055" type="WebSocket">
+                    <param id="0" name="Data">Outgoing.AsJSON</param>
+                </action>
+                <action id="0" name="Clear" sid="7669113644557964" type="Outgoing" />
+            </actions>
+        </event-block>
+        <event-group description="" sid="1039653217306552" title="IncomingMessage">
+            <sub-events>
+                <event-block sid="4037122292456869">
+                    <conditions>
+                        <condition id="3" name="On message" sid="2225917278797659" type="WebSocket" />
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Load" sid="3726421235275271" type="Incoming">
+                            <param id="0" name="JSON">WebSocket.MessageText</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1791332092285234">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="4973577053551162" type="Incoming">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Moving&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="1348959862379243" type="Bolid2">
+                            <param id="0" name="Angle">Incoming.At(1)</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="1409003944252915" type="Bolid2">
+                            <param id="0" name="X">Incoming.At(2)</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="5552385847922033" type="Bolid2">
+                            <param id="0" name="Y">Incoming.At(3)</param>
+                        </action>
+                        <action id="0" name="Clear" sid="6651804955509105" type="Incoming" />
+                    </actions>
+                </event-block>
+                <event-block sid="3274588897309962">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="8205714002904707" type="Incoming">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;ChangeTeam&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="10" name="Load image from URL" sid="1766457000381034" type="Bolid2">
+                            <param id="0" name="URI">Incoming.At(1)&amp;&quot;_2014.png&quot;</param>
+                            <param id="1" name="Size">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
