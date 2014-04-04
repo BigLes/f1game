@@ -90,6 +90,11 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -132,7 +137,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.841748595</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="3">
@@ -161,7 +166,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.841748595</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="4">
@@ -190,7 +195,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.729856908</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="5">
@@ -219,7 +224,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.283214808</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="6">
@@ -248,7 +253,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.136208296</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="8">
@@ -277,7 +282,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.0183146</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="9">
@@ -306,7 +311,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.166525841</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="10">
@@ -335,7 +340,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.002864361</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="11">
@@ -364,7 +369,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.658076406</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="12">
@@ -393,7 +398,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.263102055</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="13">
@@ -422,7 +427,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.912574053</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="14">
@@ -451,7 +456,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.621753037</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="15">
@@ -480,7 +485,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.327399045</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="16">
@@ -509,7 +514,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.088264734</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="17">
@@ -538,7 +543,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.373938352</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="18">
@@ -567,7 +572,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.933626711</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="19">
@@ -596,7 +601,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.408311844</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="20">
@@ -625,7 +630,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.677579939</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="21">
@@ -654,7 +659,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.521441162</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="22">
@@ -683,7 +688,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.455899954</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="23">
@@ -712,7 +717,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-0.155604601</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="24">
@@ -741,7 +746,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-0.782347322</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="25">
@@ -770,7 +775,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.738643765</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="26">
@@ -799,7 +804,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.100085139</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="27">
@@ -828,7 +833,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.608962297</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="28">
@@ -857,7 +862,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.109326124</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="29">
@@ -886,7 +891,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.933800459</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="30">
@@ -915,7 +920,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.020436287</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="31">
@@ -944,7 +949,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.122586727</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="32">
@@ -973,7 +978,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.312068343</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="33">
@@ -1002,7 +1007,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.588237643</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="34">
@@ -1031,7 +1036,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.793701649</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="35">
@@ -1060,7 +1065,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.028061628</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="36">
@@ -1089,7 +1094,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.150505543</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="37">
@@ -1118,7 +1123,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.200182438</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="38">
@@ -1147,7 +1152,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.224476337</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="39">
@@ -1176,7 +1181,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.841748595</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="40">
@@ -1205,7 +1210,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.841748595</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="41">
@@ -1234,7 +1239,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.678754449</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="42">
@@ -1263,7 +1268,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.694726586</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="43">
@@ -1292,7 +1297,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.685175836</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="44">
@@ -1321,7 +1326,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.615860105</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="45">
@@ -1350,7 +1355,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.500683486</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="46">
@@ -1379,7 +1384,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.391688704</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="47">
@@ -1408,7 +1413,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.221847579</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="48">
@@ -1437,7 +1442,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.745418787</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="49">
@@ -1466,7 +1471,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.628090918</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="50">
@@ -1495,7 +1500,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.204651475</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="51">
@@ -1524,7 +1529,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.155731335</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="52">
@@ -1553,7 +1558,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.322945803</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="53">
@@ -1582,7 +1587,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.554313302</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="54">
@@ -1611,7 +1616,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-0.975196183</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="55">
@@ -1640,7 +1645,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-1.281829119</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="56">
@@ -1669,7 +1674,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.174345493</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="57">
@@ -1698,7 +1703,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-0.144814536</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="58">
@@ -1727,7 +1732,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-0.405671477</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="59">
@@ -1756,7 +1761,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.018069515</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="60">
@@ -1785,7 +1790,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.193234235</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="61">
@@ -1814,7 +1819,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.493944287</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="62">
@@ -1843,7 +1848,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.99618274</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="63">
@@ -1872,7 +1877,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.521193743</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="64">
@@ -1901,7 +1906,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.909199953</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="65">
@@ -1930,7 +1935,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.487382174</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="66">
@@ -1959,7 +1964,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.372425646</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="67">
@@ -1988,7 +1993,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.18852374</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="68">
@@ -2017,7 +2022,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-0.005716545</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="69">
@@ -2046,7 +2051,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-0.052307449</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="70">
@@ -2075,7 +2080,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-0.206323609</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="71">
@@ -2104,7 +2109,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-0.405671477</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="72">
@@ -2133,7 +2138,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-0.09167739</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="73">
@@ -2162,7 +2167,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.259111345</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="74">
@@ -2191,7 +2196,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.03672576</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="75">
@@ -2220,7 +2225,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.353049994</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="76">
@@ -2249,7 +2254,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.318991661</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="77">
@@ -2278,7 +2283,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.537735939</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="78">
@@ -2307,7 +2312,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>3.089027643</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="79">
@@ -2336,7 +2341,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-2.711358547</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="80">
@@ -2365,7 +2370,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-2.242497444</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="81">
@@ -2394,7 +2399,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.969394028</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="82">
@@ -2423,7 +2428,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.415961027</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="83">
@@ -2452,7 +2457,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.948062539</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="84">
@@ -2481,7 +2486,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.308030605</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="85">
@@ -2510,7 +2515,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.129608154</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="86">
@@ -2539,7 +2544,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.237223625</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="87">
@@ -2568,7 +2573,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.995103121</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="88">
@@ -2597,7 +2602,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.088637352</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="89">
@@ -2626,7 +2631,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.594995379</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="90">
@@ -2655,7 +2660,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.555242062</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="91">
@@ -2684,7 +2689,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.899168015</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="92">
@@ -2713,7 +2718,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.429830194</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="93">
@@ -2742,7 +2747,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.069189072</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="94">
@@ -2771,7 +2776,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-0.155595303</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="95">
@@ -2800,7 +2805,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.121961944</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="96">
@@ -2829,7 +2834,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.552763104</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="97">
@@ -2858,7 +2863,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-0.063079096</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="98">
@@ -2887,7 +2892,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.749702156</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="99">
@@ -2916,7 +2921,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-0.600696743</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="100">
@@ -2945,7 +2950,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-0.324871004</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="101">
@@ -2974,7 +2979,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-0.201440096</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="102">
@@ -3003,7 +3008,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-0.84246105</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="103">
@@ -3032,7 +3037,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.011287928</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="104">
@@ -3061,7 +3066,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.692314625</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="105">
@@ -3090,7 +3095,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.203132391</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="106">
@@ -3119,7 +3124,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.804889202</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="107">
@@ -3148,7 +3153,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>3.072124958</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="108">
@@ -3177,7 +3182,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.843300819</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="109">
@@ -3206,7 +3211,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.602864027</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="110">
@@ -3235,7 +3240,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.17634058</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="111">
@@ -3264,7 +3269,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.780574918</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="112">
@@ -3293,7 +3298,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.123268366</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="113">
@@ -3322,7 +3327,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.687454164</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="114">
@@ -3351,7 +3356,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.935823679</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="115">
@@ -3380,7 +3385,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.128231525</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="116">
@@ -3409,7 +3414,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.046911478</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="117">
@@ -3438,7 +3443,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.151819468</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="118">
@@ -3467,7 +3472,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.20635438</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="119">
@@ -3496,7 +3501,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.018855333</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="120">
@@ -3525,7 +3530,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.693056226</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="121">
@@ -3554,7 +3559,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.363292694</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="122">
@@ -3583,7 +3588,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.920652866</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="123">
@@ -3612,7 +3617,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-2.659644127</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="124">
@@ -3641,7 +3646,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.09244702</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="125">
@@ -3670,7 +3675,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-2.80634594</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="126">
@@ -3699,7 +3704,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-2.500343323</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="127">
@@ -3728,7 +3733,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-1.742555141</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="128">
@@ -3757,7 +3762,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-2.041354656</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="129">
@@ -3786,7 +3791,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.395129323</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="130">
@@ -3815,7 +3820,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.716788888</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="131">
@@ -3844,7 +3849,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.181571484</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="132">
@@ -3873,7 +3878,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.737918377</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="133">
@@ -3902,7 +3907,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.159056231</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="134">
@@ -3931,7 +3936,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.676741421</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="135">
@@ -3960,7 +3965,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.493345171</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="136">
@@ -3989,7 +3994,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.38179338</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="137">
@@ -4018,7 +4023,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.732258022</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="138">
@@ -4047,7 +4052,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.125112772</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="139">
@@ -4076,7 +4081,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>2.11694169</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="140">
@@ -4105,7 +4110,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.766168356</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="141">
@@ -4134,7 +4139,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-0.699175775</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="142">
@@ -4163,7 +4168,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.02128521</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="143">
@@ -4192,7 +4197,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.638783455</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="144">
@@ -4221,7 +4226,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.940771341</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="145">
@@ -4250,7 +4255,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.004646182</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="146">
@@ -4279,7 +4284,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.163917542</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="147">
@@ -4308,7 +4313,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.376787424</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="148">
@@ -4337,7 +4342,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.579331994</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="149">
@@ -4366,7 +4371,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.770132184</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="150">
@@ -4395,7 +4400,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>1.980742216</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="151">
@@ -4424,7 +4429,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.193225101</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="152">
@@ -4453,7 +4458,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.750921011</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="153">
@@ -4482,7 +4487,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-0.052565567</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="154">
@@ -4511,7 +4516,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.212637797</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="155">
@@ -4540,7 +4545,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.372997403</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="156">
@@ -4569,7 +4574,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.187410906</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="157">
@@ -4598,7 +4603,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.419316411</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="158">
@@ -4627,7 +4632,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.367293656</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="159">
@@ -4656,7 +4661,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.273455888</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="160">
@@ -4685,7 +4690,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.128219694</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="161">
@@ -4714,7 +4719,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-0.063730389</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="162">
@@ -4743,7 +4748,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.186481908</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="163">
@@ -4772,7 +4777,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.656503499</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="164">
@@ -4801,7 +4806,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.893944681</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="165">
@@ -4830,7 +4835,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>-0.265821517</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="BorderLine" uid="166">
@@ -4859,7 +4864,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.495999992</hotspotY>
                         <angle>0.353037447</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="FinishLine" uid="168">
@@ -4882,6 +4887,35 @@
                         <hotspotY>0.5</hotspotY>
                         <angle>-0.766964078</angle>
                         <opacity>0</opacity>
+                    </world>
+                </instance>
+                <instance type="Bolid2" uid="173">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>230.394256592</x>
+                        <y>-7.259338379</y>
+                        <z>0</z>
+                        <width>10.368000031</width>
+                        <height>3.628999949</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>
@@ -4986,6 +5020,21 @@
             <effects />
         </layer>
     </layers>
-    <nonworld-instances />
+    <nonworld-instances>
+        <instance type="Outgoing" uid="171">
+            <properties>
+                <width>10</width>
+                <height>1</height>
+                <depth>1</depth>
+            </properties>
+        </instance>
+        <instance type="Incoming" uid="172">
+            <properties>
+                <width>10</width>
+                <height>1</height>
+                <depth>1</depth>
+            </properties>
+        </instance>
+    </nonworld-instances>
     <effects />
 </c2layout>

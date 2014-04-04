@@ -10,6 +10,8 @@
     <unique-id>3j4f1u0gyhrut</unique-id>
     <saved-with-version>15200</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="C2WebSocket" version="1">WebSocket</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
@@ -53,6 +55,9 @@
                 </behavior-type>
                 <behavior-type name="ScrollTo" sid="6814093011810572">
                     <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="3800356288389828">
+                    <behavior id="solid" />
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
@@ -110,6 +115,39 @@
         <object-type name="BestTime" sid="1740304245286929">
             <plugin id="Text" />
         </object-type>
+        <object-type name="WebSocket" sid="8081179180555708">
+            <plugin id="C2WebSocket" />
+        </object-type>
+        <object-type global="1" name="Outgoing" sid="4017062984691652">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type global="1" name="Incoming" sid="6099907461859432">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="Bolid2" sid="4458722470702433">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="3088824494226224">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8568174100986701" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.1" y="0.285714" />
+                            <point x="0.5" y="0.142857" />
+                            <point x="0.965" y="0.1" />
+                            <point x="1" y="0.5" />
+                            <point x="0.965" y="0.9" />
+                            <point x="0.5" y="0.857143" />
+                            <point x="0.095" y="0.728571" />
+                            <point x="0.05" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="0">
@@ -118,11 +156,13 @@
     <event-folder expanded="0">
         <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="WebSocket" uid="170" />
+    </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />
     <files-folder expanded="1">
-        <file-folder expanded="0" name="Icons">
+        <file-folder expanded="1" name="Icons">
             <file name="icon-16.png" />
             <file name="icon-32.png" />
             <file name="icon-114.png" />

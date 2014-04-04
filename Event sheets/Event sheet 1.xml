@@ -71,5 +71,59 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="6113103946915705">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="5013430610134492" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Connect" sid="5922768467237896" type="WebSocket">
+                    <param id="0" name="URL">&quot;ws://localhost:80&quot;</param>
+                    <param id="1" name="Protocol (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8874954985840656">
+            <conditions>
+                <condition behavior="Car" id="0" name="Is moving" sid="7966977161375558" type="Bolid" />
+            </conditions>
+            <actions>
+                <action id="2" name="Set at X" sid="6212332701575469" type="Outgoing">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Value">Bolid.Angle</param>
+                </action>
+                <action id="2" name="Set at X" sid="3944834751606776" type="Outgoing">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Value">Bolid.X</param>
+                </action>
+                <action id="2" name="Set at X" sid="7851751404929035" type="Outgoing">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Value">Bolid.Y</param>
+                </action>
+                <action id="2" name="Send text" sid="2681538837746745" type="WebSocket">
+                    <param id="0" name="Data">Outgoing.AsJSON</param>
+                </action>
+                <action id="0" name="Clear" sid="2726988069740121" type="Outgoing" />
+            </actions>
+        </event-block>
+        <event-block sid="4037122292456869">
+            <conditions>
+                <condition id="3" name="On message" sid="2225917278797659" type="WebSocket" />
+            </conditions>
+            <actions>
+                <action id="11" name="Load" sid="3726421235275271" type="Incoming">
+                    <param id="0" name="JSON">WebSocket.MessageText</param>
+                </action>
+                <action id="-8" name="Set angle" sid="1348959862379243" type="Bolid2">
+                    <param id="0" name="Angle">Incoming.At(0)</param>
+                </action>
+                <action id="-1" name="Set X" sid="1409003944252915" type="Bolid2">
+                    <param id="0" name="X">Incoming.At(1)</param>
+                </action>
+                <action id="-2" name="Set Y" sid="5552385847922033" type="Bolid2">
+                    <param id="0" name="Y">Incoming.At(2)</param>
+                </action>
+                <action id="0" name="Clear" sid="6651804955509105" type="Incoming" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
