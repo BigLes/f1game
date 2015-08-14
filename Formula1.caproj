@@ -8,17 +8,17 @@
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>3j4f1u0gyhrut</unique-id>
-    <saved-with-version>15200</saved-with-version>
+    <saved-with-version>20600</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="C2WebSocket" version="1">WebSocket</plugin>
-        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="List" version="1">List</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="progressbar" version="1">Progress bar</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Car" version="1">Car</behavior>
@@ -34,6 +34,7 @@
         <height>108</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -46,12 +47,12 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
-    <object-folder expanded="0">
+    <object-folder>
         <object-type name="Track" sid="1546873249504891">
             <plugin id="TiledBg" />
             <texture />
         </object-type>
-        <object-type name="Bolid" sid="6080957087464075">
+        <object-type name="Player" sid="6080957087464075">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Car" sid="5349907379573776">
@@ -64,7 +65,7 @@
                     <behavior id="solid" />
                 </behavior-type>
             </behaviors>
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9135022471914005" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
@@ -84,7 +85,7 @@
                     <behavior id="solid" />
                 </behavior-type>
             </behaviors>
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2281552444663257" speed="5">
                     <frame duration="1" hotspotX="1" hotspotY="0.496" />
                 </animation>
@@ -96,17 +97,9 @@
         <object-type name="Clock" sid="2138290966002349">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite" sid="5865097571900698">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6549076671434698" speed="5">
-                    <frame duration="1" hotspotX="-0.92" hotspotY="-0.356" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="FinishLine" sid="3675104297115524">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7616536716477421" speed="5">
                     <frame duration="1" hotspotX="1" hotspotY="0.5" />
                 </animation>
@@ -124,22 +117,6 @@
         <object-type global="1" name="Incoming" sid="6099907461859432">
             <plugin id="Arr" />
         </object-type>
-        <object-type name="Bolid2" sid="4458722470702433">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="3088824494226224">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8568174100986701" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Keyboard" sid="767375328950223">
-            <plugin id="Keyboard" />
-        </object-type>
         <object-type name="Teams" sid="8994525711515348">
             <plugin id="List" />
         </object-type>
@@ -153,22 +130,80 @@
         <object-type name="Submit" sid="4890246877399818">
             <plugin id="Button" />
         </object-type>
+        <object-type name="TempBolid" sid="1901055964225353">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="832625284110333">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9669767360699787" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.995" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="4852852905660209">
+            <plugin id="TiledBg" />
+            <texture original-source="\\VBOXSVR\Share\F1_Logo.png" />
+        </object-type>
+        <object-type name="Logo" sid="2746357947678095">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5868453515602214" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="\\VBOXSVR\Share\F1_Logo.png">
+                        <collision-poly>
+                            <point x="0.192188" y="0.41" />
+                            <point x="0.5" y="0" />
+                            <point x="0.988281" y="0.025" />
+                            <point x="0.602344" y="0.5" />
+                            <point x="0.807813" y="0.59" />
+                            <point x="0.5" y="0.901667" />
+                            <point x="0.00234375" y="0.995" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ProgressBar" sid="5776752691293877">
+            <plugin id="progressbar" />
+        </object-type>
+        <object-type name="MiddleLine" sid="9964011810101183">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3816655462646596" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Finish" sid="8694147932481853">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Result" sid="3029349993881494">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
-    <layout-folder expanded="0">
+    <layout-folder>
         <layout>Layout 1.xml</layout>
     </layout-folder>
-    <event-folder expanded="0">
+    <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="WebSocket" uid="170" />
-        <global-instance type="Keyboard" uid="174" />
     </global-instances>
-    <sounds-folder expanded="1" />
-    <music-folder expanded="1" />
-    <files-folder expanded="0">
-        <file-folder expanded="1" name="Icons">
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
             <file name="icon-16.png" />
             <file name="icon-32.png" />
             <file name="icon-114.png" />
