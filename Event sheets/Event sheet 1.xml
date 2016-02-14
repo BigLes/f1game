@@ -140,7 +140,7 @@
         <event-block sid="4418171882610867">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="726497146540322" type="Player">
-                    <param id="0" name="Object">FinishLine</param>
+                    <param id="0" name="Object">FinishMonaco</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="629698877461362" type="System">
                     <param id="0" name="Variable">Started</param>
@@ -446,7 +446,7 @@
         <event-block sid="8501671407138723">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="2918018451870313" type="Player">
-                    <param id="0" name="Object">MiddleLine</param>
+                    <param id="0" name="Object">MiddleMonaco</param>
                 </condition>
             </conditions>
             <actions>

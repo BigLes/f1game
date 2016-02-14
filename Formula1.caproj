@@ -8,7 +8,7 @@
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>3j4f1u0gyhrut</unique-id>
-    <saved-with-version>20600</saved-with-version>
+    <saved-with-version>22100</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
@@ -48,9 +48,9 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="Track" sid="1546873249504891">
+        <object-type name="TrackMonaco" sid="1546873249504891">
             <plugin id="TiledBg" />
-            <texture />
+            <texture original-source="D:\Files\Documents\GitHub\formula1-front-end\Textures\Monaco.png" />
         </object-type>
         <object-type name="Player" sid="6080957087464075">
             <plugin id="Sprite" />
@@ -78,7 +78,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="BorderLine" sid="3953708517560978">
+        <object-type name="BorderMonaco" sid="3953708517560978">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Solid" sid="3709260024798686">
@@ -97,7 +97,7 @@
         <object-type name="Clock" sid="2138290966002349">
             <plugin id="Text" />
         </object-type>
-        <object-type name="FinishLine" sid="3675104297115524">
+        <object-type name="FinishMonaco" sid="3675104297115524">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7616536716477421" speed="5">
@@ -175,7 +175,7 @@
         <object-type name="ProgressBar" sid="5776752691293877">
             <plugin id="progressbar" />
         </object-type>
-        <object-type name="MiddleLine" sid="9964011810101183">
+        <object-type name="MiddleMonaco" sid="9964011810101183">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3816655462646596" speed="5">
