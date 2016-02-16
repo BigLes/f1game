@@ -10,28 +10,6 @@
         <variable constant="0" name="Timing" sid="3692732723623955" static="0" type="number">0</variable>
         <variable constant="0" name="Timer" sid="9215177748043668" static="0" type="number">0</variable>
         <variable constant="0" name="Scale" sid="2364033096399219" static="0" type="number">1</variable>
-        <event-block sid="7841787843452339">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="1604195423567192" type="System" />
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="2777151086191036" type="Speed">
-                    <param id="0" name="Text">int(Player.Car.Speed * 4) &amp; &quot; km/h&quot;</param>
-                </action>
-                <action id="-9" name="Set value" sid="1771301335325111" type="System">
-                    <param id="0" name="Variable">Scale</param>
-                    <param id="1" name="Value">1 - Player.Car.Speed / 300</param>
-                </action>
-                <action id="-17" name="Set layer scale" sid="2643820405538175" type="System">
-                    <param id="0" name="Layer">&quot;Background&quot;</param>
-                    <param id="1" name="Scale">lerp(LayerScale(&quot;Background&quot;), Scale, 0.01)</param>
-                </action>
-                <action id="-17" name="Set layer scale" sid="2531403566472264" type="System">
-                    <param id="0" name="Layer">&quot;Movements&quot;</param>
-                    <param id="1" name="Scale">LayerScale(&quot;Background&quot;)</param>
-                </action>
-            </actions>
-        </event-block>
         <event-group description="" sid="5812082913065703" title="Start">
             <sub-events>
                 <event-block sid="6113103946915705">
@@ -40,7 +18,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Connect" sid="5922768467237896" type="WebSocket">
-                            <param id="0" name="URL">&quot;ws://10.30.0.65:8000&quot;</param>
+                            <param id="0" name="URL">&quot;ws://localhost:8000&quot;</param>
                             <param id="1" name="Protocol (optional)">&quot;echo-protocol&quot;</param>
                         </action>
                         <action id="6" name="Set CSS style" sid="9809158870229569" type="Teams">
@@ -133,111 +111,25 @@
                         <action id="0" name="Set text" sid="1583506685712392" type="Clock">
                             <param id="0" name="Text">floor(Timer / 60 % 60) &amp; &quot;:&quot; &amp; floor(Timer % 60)</param>
                         </action>
+                        <action id="0" name="Set text" sid="2777151086191036" type="Speed">
+                            <param id="0" name="Text">int(Player.Car.Speed * 4) &amp; &quot; km/h&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1771301335325111" type="System">
+                            <param id="0" name="Variable">Scale</param>
+                            <param id="1" name="Value">1 - Player.Car.Speed / 300</param>
+                        </action>
+                        <action id="-17" name="Set layer scale" sid="2643820405538175" type="System">
+                            <param id="0" name="Layer">&quot;Background&quot;</param>
+                            <param id="1" name="Scale">lerp(LayerScale(&quot;Background&quot;), Scale, 0.01)</param>
+                        </action>
+                        <action id="-17" name="Set layer scale" sid="2531403566472264" type="System">
+                            <param id="0" name="Layer">&quot;Movements&quot;</param>
+                            <param id="1" name="Scale">LayerScale(&quot;Background&quot;)</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="4418171882610867">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="726497146540322" type="Player">
-                    <param id="0" name="Object">FinishMonaco</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="629698877461362" type="System">
-                    <param id="0" name="Variable">Started</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="9025131404028565" type="System">
-                    <param id="0" name="Variable">BestTime</param>
-                    <param id="1" name="Value">Timing &gt; 0 ? (BestTime &gt; Timer ? Timer : BestTime) : BestTime</param>
-                </action>
-                <action id="0" name="Set text" sid="9790735059171799" type="BestTime">
-                    <param id="0" name="Text">&quot;The best: &quot; &amp; floor(BestTime / 60 % 60) &amp; &quot;:&quot; &amp; floor(BestTime % 60)</param>
-                </action>
-                <action id="-9" name="Set value" sid="3017529666084579" type="System">
-                    <param id="0" name="Variable">Timer</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-                <action id="-9" name="Set value" sid="1902576333318443" type="System">
-                    <param id="0" name="Variable">Timing</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="-9" name="Set value" sid="3763442382021336" type="System">
-                    <param id="0" name="Variable">Started</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-                <action id="-9" name="Set value" sid="7786078221549445" type="System">
-                    <param id="0" name="Variable">Laps</param>
-                    <param id="1" name="Value">Laps + 1</param>
-                </action>
-                <action id="3" name="Set progress" sid="6159767780069251" type="ProgressBar">
-                    <param id="0" name="Value">Laps</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="8874954985840656">
-            <conditions>
-                <condition behavior="Car" id="0" name="Is moving" sid="7966977161375558" type="Player" />
-            </conditions>
-            <actions>
-                <action id="2" name="Set at X" sid="7994446960334815" type="Outgoing">
-                    <param id="0" name="X">0</param>
-                    <param id="1" name="Value">&quot;Moving&quot;</param>
-                </action>
-                <action id="2" name="Set at X" sid="6212332701575469" type="Outgoing">
-                    <param id="0" name="X">1</param>
-                    <param id="1" name="Value">Player.Angle</param>
-                </action>
-                <action id="2" name="Set at X" sid="3944834751606776" type="Outgoing">
-                    <param id="0" name="X">2</param>
-                    <param id="1" name="Value">Player.X</param>
-                </action>
-                <action id="2" name="Set at X" sid="7851751404929035" type="Outgoing">
-                    <param id="0" name="X">3</param>
-                    <param id="1" name="Value">Player.Y</param>
-                </action>
-                <action id="2" name="Send text" sid="2681538837746745" type="WebSocket">
-                    <param id="0" name="Data">Outgoing.AsJSON</param>
-                </action>
-                <action id="0" name="Clear" sid="2726988069740121" type="Outgoing" />
-            </actions>
-        </event-block>
-        <event-block sid="6585324825566627">
-            <conditions>
-                <condition id="0" name="On clicked" sid="6838033320096663" type="Submit" />
-            </conditions>
-            <actions>
-                <action id="10" name="Load image from URL" sid="6883519099369438" type="Player">
-                    <param id="0" name="URI">Teams.SelectedText&amp;&quot;_2014.png&quot;</param>
-                    <param id="1" name="Size">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="9991134363657183" type="Background">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-9" name="Destroy" sid="8817317305961532" type="Name" />
-                <action id="-9" name="Destroy" sid="8701777289742659" type="Teams" />
-                <action id="-9" name="Destroy" sid="36710390567624" type="Submit" />
-                <action id="-9" name="Destroy" sid="1126159554795891" type="Logo" />
-                <action id="2" name="Set at X" sid="4213826665664349" type="Outgoing">
-                    <param id="0" name="X">0</param>
-                    <param id="1" name="Value">&quot;ChangeTeam&quot;</param>
-                </action>
-                <action id="2" name="Set at X" sid="7457317492808006" type="Outgoing">
-                    <param id="0" name="X">1</param>
-                    <param id="1" name="Value">Teams.SelectedText</param>
-                </action>
-                <action id="2" name="Set at X" sid="1595798538861889" type="Outgoing">
-                    <param id="0" name="X">2</param>
-                    <param id="1" name="Value">Name.Text</param>
-                </action>
-                <action id="2" name="Send text" sid="4261970510171055" type="WebSocket">
-                    <param id="0" name="Data">Outgoing.AsJSON</param>
-                </action>
-                <action id="0" name="Clear" sid="7669113644557964" type="Outgoing" />
-            </actions>
-        </event-block>
         <event-group description="" sid="1039653217306552" title="IncomingMessage">
             <sub-events>
                 <event-block sid="4037122292456869">
@@ -268,6 +160,18 @@
                                 <action id="0" name="Clear" sid="4281205462946443" type="Incoming" />
                                 <action id="3" name="Set progress" sid="1486889636277318" type="ProgressBar">
                                     <param id="0" name="Value">0</param>
+                                </action>
+                                <action id="4" name="Set maximum" sid="6241795846545607" type="ProgressBar">
+                                    <param id="0" name="Maximum">FinishLap</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="8575632109341937" type="ProgressBar">
+                                    <param id="0" name="Y">0</param>
+                                </action>
+                                <action id="-5" name="Set width" sid="6228335313648584" type="ProgressBar">
+                                    <param id="0" name="Width">50</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="1082797491802345" type="ProgressBar">
+                                    <param id="0" name="X">71</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -331,21 +235,6 @@
                                     <param id="0" name="Data">Outgoing.AsJSON</param>
                                 </action>
                                 <action id="0" name="Clear" sid="2948204013854234" type="Outgoing" />
-                                <action id="4" name="Set maximum" sid="6241795846545607" type="ProgressBar">
-                                    <param id="0" name="Maximum">FinishLap</param>
-                                </action>
-                                <action id="-2" name="Set Y" sid="8575632109341937" type="ProgressBar">
-                                    <param id="0" name="Y">0</param>
-                                </action>
-                                <action id="-5" name="Set width" sid="6228335313648584" type="ProgressBar">
-                                    <param id="0" name="Width">50</param>
-                                </action>
-                                <action id="-1" name="Set X" sid="1082797491802345" type="ProgressBar">
-                                    <param id="0" name="X">71</param>
-                                </action>
-                                <action id="3" name="Set progress" sid="6799482673675999" type="ProgressBar">
-                                    <param id="0" name="Value">0</param>
-                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="9687033663631306">
@@ -443,64 +332,173 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="8501671407138723">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="2918018451870313" type="Player">
-                    <param id="0" name="Object">MiddleMonaco</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="6849578496300245" type="System">
-                    <param id="0" name="Variable">Started</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="6561196181090163">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="1950217429529761" type="System">
-                    <param id="0" name="Variable">Laps</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">FinishLap</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="2" name="Stop" sid="1989433310199253" type="Player" />
-                <action behavior="Car" id="2" name="Set ignoring input" sid="7411764081798869" type="Player">
-                    <param id="0" name="Input">1</param>
-                </action>
-                <action behavior="Car" id="6" name="Set deceleration" sid="5287722135163367" type="Player">
-                    <param id="0" name="Deceleration">225</param>
-                </action>
-                <action id="-15" name="Set visible" sid="686353072643775" type="Background">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="9722605970989619" type="Finish">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-16" name="Set opacity" sid="8510182670610168" type="Background">
-                    <param id="0" name="Opacity">50</param>
-                </action>
-                <action id="1" name="Set visible" sid="2325825897964399" type="ProgressBar">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-9" name="Destroy" sid="6799641963256823" type="BestTime" />
-                <action id="-9" name="Destroy" sid="7482939471199719" type="Clock" />
-                <action id="-15" name="Set visible" sid="7230709507923637" type="Result">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="2" name="Set at X" sid="7894398385832095" type="Outgoing">
-                    <param id="0" name="X">0</param>
-                    <param id="1" name="Value">&quot;Finish&quot;</param>
-                </action>
-                <action id="2" name="Set at X" sid="6375551079453775" type="Outgoing">
-                    <param id="0" name="X">1</param>
-                    <param id="1" name="Value">BestTime</param>
-                </action>
-                <action id="2" name="Send text" sid="1363507811239694" type="WebSocket">
-                    <param id="0" name="Data">Outgoing.AsJSON</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="8134625067442814" title="Player">
+            <sub-events>
+                <event-block sid="4418171882610867">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="726497146540322" type="Player">
+                            <param id="0" name="Object">FinishMonaco</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="629698877461362" type="System">
+                            <param id="0" name="Variable">Started</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="9025131404028565" type="System">
+                            <param id="0" name="Variable">BestTime</param>
+                            <param id="1" name="Value">Timing &gt; 0 ? (BestTime &gt; Timer ? Timer : BestTime) : BestTime</param>
+                        </action>
+                        <action id="0" name="Set text" sid="9790735059171799" type="BestTime">
+                            <param id="0" name="Text">&quot;The best: &quot; &amp; floor(BestTime / 60 % 60) &amp; &quot;:&quot; &amp; floor(BestTime % 60)</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="3017529666084579" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1902576333318443" type="System">
+                            <param id="0" name="Variable">Timing</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="3763442382021336" type="System">
+                            <param id="0" name="Variable">Started</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7786078221549445" type="System">
+                            <param id="0" name="Variable">Laps</param>
+                            <param id="1" name="Value">Laps + 1</param>
+                        </action>
+                        <action id="3" name="Set progress" sid="6159767780069251" type="ProgressBar">
+                            <param id="0" name="Value">Laps</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8874954985840656">
+                    <conditions>
+                        <condition behavior="Car" id="0" name="Is moving" sid="7966977161375558" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="7994446960334815" type="Outgoing">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Value">&quot;Moving&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="6212332701575469" type="Outgoing">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Value">Player.Angle</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="3944834751606776" type="Outgoing">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Value">Player.X</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="7851751404929035" type="Outgoing">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Value">Player.Y</param>
+                        </action>
+                        <action id="2" name="Send text" sid="2681538837746745" type="WebSocket">
+                            <param id="0" name="Data">Outgoing.AsJSON</param>
+                        </action>
+                        <action id="0" name="Clear" sid="2726988069740121" type="Outgoing" />
+                    </actions>
+                </event-block>
+                <event-block sid="8501671407138723">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="2918018451870313" type="Player">
+                            <param id="0" name="Object">MiddleMonaco</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="6849578496300245" type="System">
+                            <param id="0" name="Variable">Started</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="4582417891072427" title="System">
+            <sub-events>
+                <event-block sid="6561196181090163">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="1950217429529761" type="System">
+                            <param id="0" name="Variable">Laps</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">FinishLap</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Stop" sid="1989433310199253" type="Player" />
+                        <action behavior="Car" id="2" name="Set ignoring input" sid="7411764081798869" type="Player">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action behavior="Car" id="6" name="Set deceleration" sid="5287722135163367" type="Player">
+                            <param id="0" name="Deceleration">225</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="686353072643775" type="Background">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9722605970989619" type="Finish">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="8510182670610168" type="Background">
+                            <param id="0" name="Opacity">50</param>
+                        </action>
+                        <action id="1" name="Set visible" sid="2325825897964399" type="ProgressBar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="6799641963256823" type="BestTime" />
+                        <action id="-9" name="Destroy" sid="7482939471199719" type="Clock" />
+                        <action id="-15" name="Set visible" sid="7230709507923637" type="Result">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="7894398385832095" type="Outgoing">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Value">&quot;Finish&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="6375551079453775" type="Outgoing">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Value">BestTime</param>
+                        </action>
+                        <action id="2" name="Send text" sid="1363507811239694" type="WebSocket">
+                            <param id="0" name="Data">Outgoing.AsJSON</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6585324825566627">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="6838033320096663" type="Submit" />
+                    </conditions>
+                    <actions>
+                        <action id="10" name="Load image from URL" sid="6883519099369438" type="Player">
+                            <param id="0" name="URI">Teams.SelectedText&amp;&quot;_2014.png&quot;</param>
+                            <param id="1" name="Size">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9991134363657183" type="Background">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="8817317305961532" type="Name" />
+                        <action id="-9" name="Destroy" sid="8701777289742659" type="Teams" />
+                        <action id="-9" name="Destroy" sid="36710390567624" type="Submit" />
+                        <action id="-9" name="Destroy" sid="1126159554795891" type="Logo" />
+                        <action id="2" name="Set at X" sid="4213826665664349" type="Outgoing">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Value">&quot;ChangeTeam&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="7457317492808006" type="Outgoing">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Value">Teams.SelectedText</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="1595798538861889" type="Outgoing">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Value">Name.Text</param>
+                        </action>
+                        <action id="2" name="Send text" sid="4261970510171055" type="WebSocket">
+                            <param id="0" name="Data">Outgoing.AsJSON</param>
+                        </action>
+                        <action id="0" name="Clear" sid="7669113644557964" type="Outgoing" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
