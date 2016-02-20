@@ -11,6 +11,7 @@
     <saved-with-version>22100</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="C2WebSocket" version="1">WebSocket</plugin>
         <plugin author="Scirra" id="List" version="1">List</plugin>
@@ -30,11 +31,12 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>192</width>
-        <height>108</height>
+        <width>1280</width>
+        <height>720</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>Main</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -48,7 +50,7 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="TrackMonaco" sid="1546873249504891">
+        <object-type name="Track" sid="1546873249504891">
             <plugin id="TiledBg" />
             <texture original-source="D:\Files\Documents\GitHub\formula1-front-end\Textures\Monaco.png" />
         </object-type>
@@ -78,7 +80,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="BorderMonaco" sid="3953708517560978">
+        <object-type name="LineBorder" sid="3953708517560978">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Solid" sid="3709260024798686">
@@ -91,13 +93,13 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Speed" sid="586966251136136">
+        <object-type name="TextSpeed" sid="586966251136136">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Clock" sid="2138290966002349">
+        <object-type name="TextClock" sid="2138290966002349">
             <plugin id="Text" />
         </object-type>
-        <object-type name="FinishMonaco" sid="3675104297115524">
+        <object-type name="LineFinish" sid="3675104297115524">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7616536716477421" speed="5">
@@ -105,7 +107,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="BestTime" sid="1740304245286929">
+        <object-type name="TextBestTime" sid="1740304245286929">
             <plugin id="Text" />
         </object-type>
         <object-type name="WebSocket" sid="8081179180555708">
@@ -117,17 +119,17 @@
         <object-type global="1" name="Incoming" sid="6099907461859432">
             <plugin id="Arr" />
         </object-type>
-        <object-type name="Teams" sid="8994525711515348">
+        <object-type name="ListTeams" sid="8994525711515348">
             <plugin id="List" />
         </object-type>
         <object-type name="Background" sid="4530187367730032">
             <plugin id="TiledBg" />
-            <texture />
+            <texture original-source="D:\Files\Documents\GitHub\formula1-front-end\Textures\monaco-logo.jpg" />
         </object-type>
         <object-type name="Name" sid="5196432949096969">
             <plugin id="TextBox" />
         </object-type>
-        <object-type name="Submit" sid="4890246877399818">
+        <object-type name="SubmitRace" sid="4890246877399818">
             <plugin id="Button" />
         </object-type>
         <object-type name="TempBolid" sid="1901055964225353">
@@ -150,32 +152,10 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TiledBackground" sid="4852852905660209">
-            <plugin id="TiledBg" />
-            <texture original-source="\\VBOXSVR\Share\F1_Logo.png" />
-        </object-type>
-        <object-type name="Logo" sid="2746357947678095">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5868453515602214" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="\\VBOXSVR\Share\F1_Logo.png">
-                        <collision-poly>
-                            <point x="0.192188" y="0.41" />
-                            <point x="0.5" y="0" />
-                            <point x="0.988281" y="0.025" />
-                            <point x="0.602344" y="0.5" />
-                            <point x="0.807813" y="0.59" />
-                            <point x="0.5" y="0.901667" />
-                            <point x="0.00234375" y="0.995" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="ProgressBar" sid="5776752691293877">
             <plugin id="progressbar" />
         </object-type>
-        <object-type name="MiddleMonaco" sid="9964011810101183">
+        <object-type name="LineMiddle" sid="9964011810101183">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3816655462646596" speed="5">
@@ -183,22 +163,38 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Finish" sid="8694147932481853">
+        <object-type global="1" name="ListTracks" sid="3859791489415033">
+            <plugin id="List" />
+        </object-type>
+        <object-type name="Text" sid="9199292841685969">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Result" sid="3029349993881494">
-            <plugin id="Text" />
+        <object-type name="ListGameType" sid="4168586167826489">
+            <plugin id="List" />
+        </object-type>
+        <object-type name="SubmitMain" sid="3413763441655881">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="TiledBackground" sid="744754569138676">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Files\Documents\GitHub\formula1-front-end\Textures\main.jpg" />
+        </object-type>
+        <object-type name="Browser" sid="6235099217209792">
+            <plugin id="Browser" />
         </object-type>
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
+        <layout>Main.xml</layout>
+        <layout>Monaco.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Race.xml</event-sheet>
+        <event-sheet>Main.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="WebSocket" uid="170" />
+        <global-instance type="Browser" uid="193" />
     </global-instances>
     <sounds-folder />
     <music-folder />
@@ -213,5 +209,6 @@
         </file-folder>
         <file name="Lotus_2014.png" />
         <file name="Ferrari_2014.png" />
+        <file name="main.css" />
     </files-folder>
 </c2project>

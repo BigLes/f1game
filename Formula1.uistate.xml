@@ -10,14 +10,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Layout 1</layout>
-        <event-sheet active="1" order="1">Event sheet 1</event-sheet>
+        <layout order="0">Monaco</layout>
+        <layout active="1" order="2">Main</layout>
+        <event-sheet order="1">Race</event-sheet>
+        <event-sheet order="3">Main</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="0" name="About" />
-        <property expanded="0" name="Project settings" />
+        <property expanded="1" name="Project settings" />
         <property expanded="0" name="Window Size" />
-        <property expanded="0" name="Configuration Settings" />
+        <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1" />
     <folders-expanded>
@@ -29,10 +31,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/Player/" />
-        <folder expanded="1" path="animation-folder/BorderMonaco/" />
-        <folder expanded="1" path="animation-folder/FinishMonaco/" />
+        <folder expanded="1" path="animation-folder/LineBorder/" />
+        <folder expanded="1" path="animation-folder/LineFinish/" />
         <folder expanded="1" path="animation-folder/TempBolid/" />
-        <folder expanded="1" path="animation-folder/Logo/" />
-        <folder expanded="1" path="animation-folder/MiddleMonaco/" />
+        <folder expanded="1" path="animation-folder/LineMiddle/" />
     </folders-expanded>
 </c2uistate>

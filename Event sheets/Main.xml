@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Main</name>
+    <events>
+        <variable constant="0" name="RoomId" sid="1728798074005958" static="0" type="text"></variable>
+        <event-block sid="3488949930515847">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="9595918219905249" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Set CSS style" sid="223231153510717" type="ListTracks">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;1.3em&quot;</param>
+                </action>
+                <action id="6" name="Set CSS style" sid="3476690142890664" type="ListGameType">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;1.3em&quot;</param>
+                </action>
+                <action id="5" name="Set CSS style" sid="2363050991368072" type="SubmitMain">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;1.3em&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="9571693325409544" type="System">
+                    <param id="0" name="Variable">RoomId</param>
+                    <param id="1" name="Value">Browser.Hash</param>
+                </action>
+                <action id="0" name="Connect" sid="2738118041461483" type="WebSocket">
+                    <param id="0" name="URL">&quot;ws://localhost:8000?roomId=&quot; &amp; replace(RoomId, &quot;#&quot;, &quot;&quot;)</param>
+                    <param id="1" name="Protocol (optional)">&quot;echo-protocol&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="6600456272088205">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="3068275732773914" type="System">
+                            <param id="0" name="Variable">RoomId</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set visible" sid="8498018281793113" type="ListTracks">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="2" name="Set visible" sid="1191971164222746" type="ListGameType">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="2" name="Set visible" sid="8588536556507374" type="SubmitMain">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8204336546554682" type="Text">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="8959031067985302">
+            <conditions>
+                <condition id="0" name="On clicked" sid="6341520513137145" type="SubmitMain" />
+            </conditions>
+            <actions>
+                <action id="2" name="Set at X" sid="996393770528865" type="Outgoing">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Value">&quot;ChooseTrack&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="5981843345188735" type="Outgoing">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Value">ListTracks.SelectedText</param>
+                </action>
+                <action id="2" name="Send text" sid="9653737261559045" type="WebSocket">
+                    <param id="0" name="Data">Outgoing.AsJSON</param>
+                </action>
+                <action id="0" name="Clear" sid="1183134857835101" type="Outgoing" />
+            </actions>
+        </event-block>
+        <event-block sid="1244313381974768">
+            <conditions>
+                <condition id="3" name="On message" sid="2329160352907529" type="WebSocket" />
+            </conditions>
+            <actions>
+                <action id="11" name="Load" sid="4113942033948241" type="Incoming">
+                    <param id="0" name="JSON">WebSocket.MessageText</param>
+                </action>
+                <action id="-30" name="Set from JSON" sid="9410882460123485" type="TextBestTime">
+                    <param id="0" name="JSON">Incoming.AsJSON</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="4779191372366838">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="8706203542132065" type="Incoming">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;ChooseTrack&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="5856830959179893" type="System">
+                            <param id="0" name="Variable">RoomId</param>
+                            <param id="1" name="Value">Incoming.At(2)</param>
+                        </action>
+                        <action id="-25" name="Go to layout (by name)" sid="7097501322222057" type="System">
+                            <param id="0" name="Layout">Incoming.At(1)</param>
+                        </action>
+                        <action id="0" name="Clear" sid="9207404060974944" type="Incoming" />
+                        <action id="17" name="Execute Javascript" sid="4886446803734439" type="Browser">
+                            <param id="0" name="Javascript">&quot;console.log(&quot; &amp; RoomId &amp; &quot;);&quot;</param>
+                        </action>
+                        <action id="17" name="Execute Javascript" sid="1095406286899158" type="Browser">
+                            <param id="0" name="Javascript">&quot;window.location.hash = &quot; &amp; RoomId</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
