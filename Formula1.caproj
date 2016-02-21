@@ -50,7 +50,7 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="Track" sid="1546873249504891">
+        <object-type name="TrackMonaco" sid="1546873249504891">
             <plugin id="TiledBg" />
             <texture original-source="D:\Files\Documents\GitHub\formula1-front-end\Textures\Monaco.png" />
         </object-type>
@@ -124,7 +124,7 @@
         </object-type>
         <object-type name="Background" sid="4530187367730032">
             <plugin id="TiledBg" />
-            <texture original-source="D:\Files\Documents\GitHub\formula1-front-end\Textures\monaco-logo.jpg" />
+            <texture original-source="D:\Files\Documents\GitHub\formula1-front-end\Textures\main.jpg" />
         </object-type>
         <object-type name="Name" sid="5196432949096969">
             <plugin id="TextBox" />
@@ -182,11 +182,16 @@
         <object-type name="Browser" sid="6235099217209792">
             <plugin id="Browser" />
         </object-type>
+        <object-type name="TrackUSA" sid="7558384727669857">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Files\Documents\GitHub\formula1-front-end\Textures\TrackUSA.png" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Main.xml</layout>
         <layout>Monaco.xml</layout>
+        <layout>USA.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Race.xml</event-sheet>
