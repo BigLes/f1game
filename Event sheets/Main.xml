@@ -26,7 +26,7 @@
                     <param id="1" name="Value">Browser.Hash</param>
                 </action>
                 <action id="0" name="Connect" sid="2738118041461483" type="WebSocket">
-                    <param id="0" name="URL">&quot;ws://lisovyk-oleksandr.appspot.com:8081?roomId=&quot; &amp; replace(RoomId, &quot;#&quot;, &quot;&quot;)</param>
+                    <param id="0" name="URL">&quot;ws://lisovyk-oleksandr.azurewebsites.net/:8000?roomId=&quot; &amp; replace(RoomId, &quot;#&quot;, &quot;&quot;)</param>
                     <param id="1" name="Protocol (optional)">&quot;echo-protocol&quot;</param>
                 </action>
             </actions>
